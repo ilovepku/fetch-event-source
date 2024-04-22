@@ -1,6 +1,6 @@
 {
-  "name": "@microsoft/fetch-event-source",
-  "version": "2.0.1",
+  "name": "@ilovepku/react-native-fetch-event-source",
+  "version": "1.0.0",
   "description": "A better API for making Event Source requests, with all the features of fetch()",
   "homepage": "https://github.com/Azure/fetch-event-source#readme",
   "repository": "github:Azure/fetch-event-source",
@@ -24,5 +24,8 @@
     "rimraf": "^3.0.2",
     "source-map-support": "^0.5.19",
     "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "react-native": "^0.73.6"
   }
 }
