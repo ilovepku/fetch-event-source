@@ -1,13 +1,13 @@
 {
-  "name": "@ilovepku/react-native-fetch-event-source",
+  "name": "react-native-fetch-event-source",
   "version": "1.0.0",
-  "description": "A better API for making Event Source requests, with all the features of fetch()",
-  "homepage": "https://github.com/Azure/fetch-event-source#readme",
-  "repository": "github:Azure/fetch-event-source",
+  "description": "A better API for making Event Source requests, with all the features of fetch(), adapted for React Native",
+  "homepage": "https://github.com/ilovepku/react-native-fetch-event-source#readme",
+  "repository": "github:ilovepku/react-native-fetch-event-source",
   "bugs": {
-    "url": "https://github.com/Azure/fetch-event-source/issues"
+    "url": "https://github.com/ilovepku/react-native-fetch-event-source/issues"
   },
-  "author": "Microsoft",
+  "author": "ilovepku",
   "license": "MIT",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -17,15 +17,13 @@
     "clean": "rimraf ./lib ./coverage",
     "prebuild": "npm run clean",
     "build": "tsc && tsc -p tsconfig.esm.json",
-    "prepublishOnly": "npm run build && npm run test"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/jasmine": "^4.3.1",
+    "react-native": "^0.74.6",
     "rimraf": "^3.0.2",
     "source-map-support": "^0.5.19",
     "typescript": "^4.2.4"
-  },
-  "peerDependencies": {
-    "react-native": "^0.73.6"
   }
 }

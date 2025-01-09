@@ -1,17 +1,17 @@
-# Contributing to @microsoft/fetch-event-source
+# Contributing to react-native-fetch-event-source
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
 
 Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.
 
-
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/Azure/fetch-event-source/issues) is
+The [issue tracker](https://github.com/ilovepku/react-native-fetch-event-source/issues) is
 the preferred channel for [bug reports](#bugs), [features requests](#features)
 and [submitting pull requests](#pull-requests).
 
 <a name="bugs"></a>
+
 ## Bug reports
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
@@ -52,17 +52,17 @@ Example:
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
 
-
 <a name="features"></a>
+
 ## Feature requests
 
 Feature requests are welcome. But take a moment to find out whether your idea
-fits with the scope and aims of the project. It's up to *you* to make a strong
+fits with the scope and aims of the project. It's up to _you_ to make a strong
 case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
 
-
 <a name="pull-requests"></a>
+
 ## Pull requests
 
 Good pull requests - patches, improvements, new features - are a fantastic
@@ -89,7 +89,7 @@ included in the project:
    # Navigate to the newly cloned directory
    cd fetch-event-source
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/Azure/fetch-event-source.git
+   git remote add upstream https://github.com/ilovepku/react-native-fetch-event-source.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
@@ -119,12 +119,11 @@ included in the project:
    ```
 
 6. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description. As part of your PR, also:
+   with a clear title and description. As part of your PR, also:
 
-    a. Update the version in package.json, **but do not publish it yet**: wait till the PR has been reviewed. If you need a version published before this, you can use prerelease tags: set the package version to something like `6.0.0-prerelease.7` and run `npm publish . --tag prerelease`.
+   a. Update the version in package.json, **but do not publish it yet**: wait till the PR has been reviewed. If you need a version published before this, you can use prerelease tags: set the package version to something like `6.0.0-prerelease.7` and run `npm publish . --tag prerelease`.
 
-
-    b. Update the [changelog](CHANGELOG.md) with your changes.
+   b. Update the [changelog](CHANGELOG.md) with your changes.
 
 ### Cutting a release
 
@@ -134,15 +133,13 @@ Once the PR has been reviewed, follow these steps to cut a release:
 
 2. Once the PR has been merged, tag the merge commit with the version:
 
-    a. `git checkout main && git pull origin main`
+   a. `git checkout main && git pull origin main`
 
-    b. `git tag v<packageVersion>` (e.g., `git tag v6.0.0`)
-    
-    c. `git push origin v<packageVersion>`
+   b. `git tag v<packageVersion>` (e.g., `git tag v6.0.0`)
 
-3. [Create a new github release](https://github.com/Azure/iot-ux-fluent-controls/releases/new) on the new tag. Use the tag name as the release title and the copy the changelog into the description.
+   c. `git push origin v<packageVersion>`
 
+3. [Create a new github release](https://github.com/ilovepku/react-native-fetch-event-source/releases/new) on the new tag. Use the tag name as the release title and the copy the changelog into the description.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project
 owners to license your work under the terms of the [MIT License](LICENSE.txt).
-
